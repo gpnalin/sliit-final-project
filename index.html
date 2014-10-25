@@ -1,0 +1,439 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Link Logistics</title>
+    <link rel="stylesheet" href="ui/stylesheets/app.css" />
+    <script src="ui/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="main-wrapper">
+
+            <div class="row">
+              <div class="large-12 columns" id="brand">
+                <img src="ui/images/logo.png" alt="LOGO">
+                <h1>Global Link<br><span>Logistics</span></h1>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="large-6 columns large-centered">
+                <ul class="button-group even-4">
+                  <li><a href="#" class="button">Home</a></li>
+                  <li><a href="#" class="button">About</a></li>
+                  <li><a href="#" class="button">Services</a></li>
+                  <li><a href="#" class="button">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns about-box">
+          <div class="black-box">
+            <h2>Experience the Global Link Difference</h2>
+            <p>Interested in Global Link and need a rate?</p>
+            <a href="#" class="secondary small button" data-reveal-id="QuotationModal">Request a Rate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-content">
+    <div class="row">
+
+      <div class="large-7 columns about-content">
+        <h4>Welcome to Global Link Logistics!</h4>
+        <p>Global Link Logistics (GLL) is your leader in containerized ocean freight transportation and supply chain visibility, specializing in Transpacific Asian/U.S. trade lanes. We provide experienced personal management so you can outsource with confidence. We are committed to keeping you informed every step of the process.</p>
+        <p>As an acknowledged leader in the supply chain services industry, GLL delivers:</p>
+        <ul>
+          <li>A full scope of ocean freight transportation services</li>
+          <li>Air freight services</li>
+          <li>Origin and destination services to meet your specific needs</li>
+          <li>Supplier management</li>
+          <li>Brokerage services</li>
+          <li>Customer service that exceeds expectations</li>
+        </ul>
+      </div>
+
+      <div class="large-5 columns">
+
+        <!-- <ul class="small-block-grid-2">
+          <li><a href="#"><img src="http://placehold.it/180x180"/></a></li>
+          <li><a href="#"><img src="http://placehold.it/180x180"/></a></li>
+          <li><a href="#"><img src="http://placehold.it/180x180"/></a></li>
+          <li><a href="#"><img src="http://placehold.it/180x180"/></a></li>
+        </ul> -->
+        <form>
+          <fieldset>
+          <legend>Fieldset Legend</legend>
+            <div class="row">
+              <div class="large-12 columns">
+
+                <label>Choose Your Favorite</label> 
+
+                <div class="row">
+                  <div class="small-3 columns">
+                    <label class="" for="service_type_d2d">Door to Door</label>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="radio" name="service_type" value="d2d" id="service_type_d2d">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-3 columns">
+                    <label for="service_type_air">﻿Air Freight</label>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="radio" name="service_type" value="air" id="service_type_air">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-3 columns">
+                    <label for="service_type_sea">﻿Sea Freight</label>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="radio" name="service_type" value="sea" id="service_type_sea">
+                  </div>
+                </div>
+
+              </div>  
+            </div>
+
+            <div class="row">
+              <div class="large-6 columns">
+                <label>From Location:
+                  <select onchange="print_state('from-state',this.selectedIndex);" id="from-country" name="from-country"></select>
+                </label>
+                
+              </div>
+              <div class="large-6 columns">
+                <label>&nbsp;
+                  <select name="from-state" id="from-state" disabled><option value="default" selected  >Select Coutry First</option></select> 
+                </label>              
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-6 columns">
+                <label>To Location:
+                  <select onchange="print_state('to-state',this.selectedIndex);" id="to-country" name="to-country"></select>
+                </label>
+                
+              </div>
+              <div class="large-6 columns">
+                <label>&nbsp;
+                  <select name="to-state" id="to-state" disabled><option value="default" selected  >Select Coutry First</option></select> 
+                </label>              
+              </div>
+            </div>
+
+            <div class="row">            
+              <div class="large-12 columns">
+                <div class="row collapse">
+                  <div class="small-4 columns">
+                    <label for="right-label" class="inline">Package Weight</label>
+                  </div>
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-10 columns">
+                        <input type="text" placeholder="small-9.columns" />
+                      </div>
+                      <div class="small-2 columns">
+                        <span class="postfix">Kg</span>
+                      </div>
+                    </div>
+                  </div>                
+                </div>
+              </div>
+            </div>
+
+            <div class="row">            
+              <div class="large-12 columns">
+                <div class="row collapse">
+                  <div class="small-4 columns">
+                    <label for="right-label" class="inline">Package Type</label>
+                  </div>
+                  <div class="small-8 columns">
+                    <select id="package-type" name="package-type">
+                      <option value="default">Please Select...</option>
+                      <option value="box">Box</option>
+                      <option value="parcel">Parcel</option>
+                      <option value="documents">Documents</option>
+                    </select>
+                  </div>                
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Package Weight
+                  <input type="text" placeholder="large-12.columns" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Width</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">cm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Length</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">cm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Height</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row"> 
+              <div class="small-2 columns"> 
+                <label for="right-label" class="inline">Quantity</label> 
+              </div> 
+              <div class="small-10 columns"> 
+                <input type="number" id="right-label" placeholder="Inline Text Input"> 
+              </div> 
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+    </div>
+    </section>
+
+
+
+    <div class="row">
+      <div class="large-12 columns">
+
+        <div class="panel">
+
+          <div class="row">
+            <div class="large-9 columns">
+              <h4>Get in touch!</h4>
+              <p>Were open 9am - 5pm, Monday through Saturdays.</p>
+            </div>
+            <div class="large-3 columns">
+              <a href="#" class="radius button right">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div id="QuotationModal" class="reveal-modal small" data-reveal>      
+      <form>
+          <fieldset>
+          <legend>Online Quotation</legend>
+            <div class="row">
+              <div class="large-12 columns">
+
+                <label>Choose Your Favorite</label> 
+
+                <div class="row">
+                  <div class="small-3 columns">
+                    <label class="" for="service_type_d2d">Door to Door</label>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="radio" name="service_type" value="d2d" id="service_type_d2d">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-3 columns">
+                    <label for="service_type_air">﻿Air Freight</label>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="radio" name="service_type" value="air" id="service_type_air">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-3 columns">
+                    <label for="service_type_sea">﻿Sea Freight</label>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="radio" name="service_type" value="sea" id="service_type_sea">
+                  </div>
+                </div>
+
+              </div>  
+            </div>
+
+            <div class="row">
+              <div class="large-6 columns">
+                <label>From Location:
+                  <select onchange="print_state('from-state',this.selectedIndex);" id="from-country" name="from-country"></select>
+                </label>
+                
+              </div>
+              <div class="large-6 columns">
+                <label>&nbsp;
+                  <select name="from-state" id="from-state" disabled><option value="default" selected  >Select Coutry First</option></select> 
+                </label>              
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-6 columns">
+                <label>To Location:
+                  <select onchange="print_state('to-state',this.selectedIndex);" id="to-country" name="to-country"></select>
+                </label>
+                
+              </div>
+              <div class="large-6 columns">
+                <label>&nbsp;
+                  <select name="to-state" id="to-state" disabled><option value="default" selected  >Select Coutry First</option></select> 
+                </label>              
+              </div>
+            </div>
+
+            <div class="row">            
+              <div class="large-12 columns">
+                <div class="row collapse">
+                  <div class="small-4 columns">
+                    <label for="right-label" class="inline">Package Weight</label>
+                  </div>
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-10 columns">
+                        <input type="text" placeholder="small-9.columns" />
+                      </div>
+                      <div class="small-2 columns">
+                        <span class="postfix">Kg</span>
+                      </div>
+                    </div>
+                  </div>                
+                </div>
+              </div>
+            </div>
+
+            <div class="row">            
+              <div class="large-12 columns">
+                <div class="row collapse">
+                  <div class="small-4 columns">
+                    <label for="right-label" class="inline">Package Type</label>
+                  </div>
+                  <div class="small-8 columns">
+                    <select id="package-type" name="package-type">
+                      <option value="default">Please Select...</option>
+                      <option value="box">Box</option>
+                      <option value="parcel">Parcel</option>
+                      <option value="documents">Documents</option>
+                    </select>
+                  </div>                
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Package Weight
+                  <input type="text" placeholder="large-12.columns" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Width</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">cm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Length</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">cm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="large-4 columns">
+                <div class="row collapse">
+                  <label>Height</label>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row"> 
+              <div class="small-2 columns"> 
+                <label for="right-label" class="inline">Quantity</label> 
+              </div> 
+              <div class="small-10 columns"> 
+                <input type="number" id="right-label" placeholder="Inline Text Input"> 
+              </div> 
+            </div>
+          </fieldset>
+        </form>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script src="ui/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="ui/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="ui/js/countries.js"></script>
+    <script src="ui/js/app.js"></script>
+  </body>
+</html>

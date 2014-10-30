@@ -15,15 +15,14 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 /**
- * Configuration for: Project URL
- * Put your URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
+ * Configuration for: Project ADMIN_URL
+ * Put your ADMIN_URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
  */
-define('URL', 'http://localhost/sliit-final-project/');
-define('ADMIN_URL', 'http://localhost/sliit-final-project/admin');
+define('ADMIN_URL', 'http://localhost/sliit-final-project/');
 
 /**
  * Configuration for: Project Paths
- * Put your URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
+ * Put your ADMIN_URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
  */
 
 define('DS'				,DIRECTORY_SEPARATOR);
